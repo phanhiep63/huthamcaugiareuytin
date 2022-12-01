@@ -22,15 +22,12 @@
                 <div class="container-fluid bg-success">
                     <div class="container">
                         <div class="row">
-                            {{-- <div class="col-md-3">
-                                <ul class="navbar-nav d-flex flex-row">
-                                    <li class="nav-item">
-                                        <a class=" text-light p-3" href="./index.html">Phương thức thanh toán</a>
-                                    </li>
-                                </ul>
-                            </div> --}}
-                            <div class="col-md-12 text-right">
-                                <p class="m-0 p-1">Hotline: <a style="font-size: 20px;" class="text-white d-inline" href="tel:0976150170">0976 150 170</a></p>
+                            <div class="col-md-7 p-1">
+                                <marquee style="font-size: 14px; color: white;">Quý khách vui lòng liên hệ SĐT để được tư vấn dịch vụ môi trường: <font style="font-weight:bold; font-size: 20px;">0976 150 170</font></marquee>
+                            </div>
+                            <div class="col-md-5 text-right">
+                                <p class="m-0 p-1">Hotline: <a style="font-size: 20px;" class="text-white d-inline font-weight-bold"
+                                        href="tel:0976150170">0976 150 170</a></p>
                             </div>
                         </div>
                     </div>
@@ -45,28 +42,31 @@
                             <!-- Links -->
                             <ul class="navbar-nav  pt-2" id="main-menu">
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link-active pt-4 pb-4 m-0 text-center pl-4 pr-4"
+                                    <a class="nav-link @if (Request::url() === url('/')) nav-link-active @endif
+                                    pt-4 pb-4 m-0 text-center pl-4 pr-4"
                                         href="{{ url('/') }}">Trang chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link  pt-4 pb-4 m-0 text-center pl-4 pr-4" href="#">Hút hầm cầu
-                                        -
-                                        bể phốt</a>
+                                    <a class="@if (Request::url() === url('hut-ham-cau-be-phot')) nav-link-active @endif nav-link pt-4 pb-4 m-0 text-center pl-4 pr-4"
+                                        href="{{ url('hut-ham-cau-be-phot') }}">Hút hầm cầu - bể phốt</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link pt-4 pb-4 m-0 text-center pl-4 pr-4" href="#">Thông cống
+                                    <a class="@if (Request::url() === url('thong-cong-nghet')) nav-link-active @endif nav-link pt-4 pb-4 m-0 text-center pl-4 pr-4"
+                                        href="{{ url('thong-cong-nghet') }}">Thông cống
                                         nghẹt</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link pt-4 pb-4 m-0 text-center pl-4 pr-4" href="#">Quy trình
+                                    <a class="@if (Request::url() === url('quy-trinh')) nav-link-active @endif nav-link pt-4 pb-4 m-0 text-center pl-4 pr-4"
+                                        href="{{ url('quy-trinh') }}">Quy trình
                                         thực
                                         hiện</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link pt-4 pb-4 m-0 text-center pl-4 pr-4" href="#">Liên hệ</a>
+                                    <a class="@if (Request::url() === url('lien-he')) nav-link-active @endif nav-link pt-4 pb-4 m-0 text-center pl-4 pr-4"
+                                        href="{{ url('lien-he') }}">Liên hệ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link pt-4 pb-4 m-0 text-center pl-4 pr-4"
+                                    <a class="@if (Request::url() === url('ve-chung-toi')) nav-link-active @endif nav-link pt-4 pb-4 m-0 text-center pl-4 pr-4"
                                         href="{{ url('ve-chung-toi') }}">Về
                                         chúng tôi</a>
                                 </li>
@@ -84,7 +84,7 @@
     </div>
     <div id="footer" style="background-color: #51c102;">
         <!-- <a href="https://chat.zalo.me/?phone=0763292763" id="linkzalo" target="_blank" rel="noopener noreferrer"> -->
-        {{-- <a href="https://zalo.me/0939110100" id="linkzalo" target="_blank" rel="noopener noreferrer">
+        <a href="https://zalo.me/0939110100" id="linkzalo" target="_blank" rel="noopener noreferrer">
                 <div id="fcta-zalo-tracking" class="fcta-zalo-mess">
                     <span id="fcta-zalo-tracking">Chat hỗ trợ</span>
                 </div>
@@ -99,7 +99,7 @@
                         <div id="fcta-zalo-tracking" class="fcta-zalo-text">Chat ngay</div>
                     </div>
                 </div>
-            </a> --}}
+            </a>
 
         <style>
             @keyframes zoom {
@@ -275,14 +275,6 @@
                             170</a></p>
 
                 </div>
-                {{-- <div class="col-md-4">
-                        <h5 class="text-light pt-2">MẠNG XÃ HỘI</h5>
-                        <p><span class="text-danger">Địa chỉ:</span> 9/3E, Ấp Đông, Thới Tam Thôn, Hóc Môn, Tp. Hồ
-                            Chí Minh</p>
-                        <p><span class="text-danger">Mã số thuế:</span></p>
-                        <p><span class="text-danger">Hotline:</span> <a href="tel:0976150170">0976 150 170</a></p>
-
-                    </div> --}}
             </div>
         </div>
 

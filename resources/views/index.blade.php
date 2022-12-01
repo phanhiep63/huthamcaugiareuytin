@@ -33,7 +33,7 @@
                     <ul>
                         <li>
                             <p class="mb-0">Khi có nhu cầu thông hút hầm cầu, quý khách vui lòng liên hệ
-                                hotline: <a style="font-size: 120%;" class="d-inline" href="tel:0976150170">0976
+                                hotline: <a style="font-size: 120%; font-weight: bold;" class="d-inline" href="tel:0976150170">0976
                                     150
                                     170</a>.
                             </p>
