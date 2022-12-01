@@ -22,25 +22,15 @@
                 <div class="container-fluid bg-success">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3">
+                            {{-- <div class="col-md-3">
                                 <ul class="navbar-nav d-flex flex-row">
                                     <li class="nav-item">
                                         <a class=" text-light p-3" href="./index.html">Phương thức thanh toán</a>
                                     </li>
                                 </ul>
-                            </div>
-                            <div class="col-md-9">
-                                <ul class="navbar-nav d-flex flex-row text-end  flex-row-reverse">
-                                    <li class="nav-item">
-                                        <a class=" text-light p-3" href="./index.html">Facebook</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class=" text-light p-3" href="./index.html">Zalo</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class=" text-light p-3" href="./index.html">Instagram</a>
-                                    </li>
-                                </ul>
+                            </div> --}}
+                            <div class="col-md-12 text-right">
+                                <p class="m-0 p-1">Hotline: <a style="font-size: 20px;" class="text-white d-inline" href="tel:0976150170">0976 150 170</a></p>
                             </div>
                         </div>
                     </div>
@@ -92,9 +82,9 @@
         @yield('content')
 
     </div>
-        <div id="footer" style="background-color: #51c102;">
-            <!-- <a href="https://chat.zalo.me/?phone=0763292763" id="linkzalo" target="_blank" rel="noopener noreferrer"> -->
-            {{-- <a href="https://zalo.me/0939110100" id="linkzalo" target="_blank" rel="noopener noreferrer">
+    <div id="footer" style="background-color: #51c102;">
+        <!-- <a href="https://chat.zalo.me/?phone=0763292763" id="linkzalo" target="_blank" rel="noopener noreferrer"> -->
+        {{-- <a href="https://zalo.me/0939110100" id="linkzalo" target="_blank" rel="noopener noreferrer">
                 <div id="fcta-zalo-tracking" class="fcta-zalo-mess">
                     <span id="fcta-zalo-tracking">Chat hỗ trợ</span>
                 </div>
@@ -111,181 +101,181 @@
                 </div>
             </a> --}}
 
-            <style>
-                @keyframes zoom {
-                    0% {
-                        transform: scale(.5);
-                        opacity: 0
-                    }
-
-                    50% {
-                        opacity: 1
-                    }
-
-                    to {
-                        opacity: 0;
-                        transform: scale(1)
-                    }
-                }
-
-                @keyframes lucidgenzalo {
-                    0% {
-                        transform: rotate(-25deg)
-                    }
-
-                    50% {
-                        transform: rotate(25deg)
-                    }
-                }
-
-                .jscroll-to-top {
-                    bottom: 100px
-                }
-
-                .fcta-zalo-ben-trong-nut svg path {
-                    fill: #fff
-                }
-
-                .fcta-zalo-vi-tri-nut {
-                    position: fixed;
-                    bottom: 30px;
-                    right: 20px;
-                    z-index: 999
-                }
-
-                .fcta-zalo-nen-nut,
-                div.fcta-zalo-mess {
-                    box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16)
-                }
-
-                .fcta-zalo-nen-nut {
-                    width: 50px;
-                    height: 50px;
-                    text-align: center;
-                    color: #fff;
-                    background: #0068ff;
-                    border-radius: 50%;
-                    position: relative
-                }
-
-                .fcta-zalo-nen-nut::after,
-                .fcta-zalo-nen-nut::before {
-                    content: "";
-                    position: absolute;
-                    border: 1px solid #0068ff;
-                    background: #0068ff80;
-                    z-index: -1;
-                    left: -20px;
-                    right: -20px;
-                    top: -20px;
-                    bottom: -20px;
-                    border-radius: 50%;
-                    animation: zoom 1.9s linear infinite
-                }
-
-                .fcta-zalo-nen-nut::after {
-                    animation-delay: .4s
-                }
-
-                .fcta-zalo-ben-trong-nut,
-                .fcta-zalo-ben-trong-nut i {
-                    transition: all 1s
-                }
-
-                .fcta-zalo-ben-trong-nut {
-                    position: absolute;
-                    text-align: center;
-                    width: 60%;
-                    height: 60%;
-                    left: 10px;
-                    bottom: 34px;
-                    line-height: 70px;
-                    font-size: 25px;
-                    opacity: 1
-                }
-
-                .fcta-zalo-ben-trong-nut i {
-                    animation: lucidgenzalo 1s linear infinite
-                }
-
-                .fcta-zalo-nen-nut:hover .fcta-zalo-ben-trong-nut,
-                .fcta-zalo-text {
+        <style>
+            @keyframes zoom {
+                0% {
+                    transform: scale(.5);
                     opacity: 0
                 }
 
-                .fcta-zalo-nen-nut:hover i {
-                    transform: scale(.5);
-                    transition: all .5s ease-in
-                }
-
-                .fcta-zalo-text a {
-                    text-decoration: none;
-                    color: #fff
-                }
-
-                .fcta-zalo-text {
-                    position: absolute;
-                    top: 6px;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    font-weight: 700;
-                    transform: scaleX(-1);
-                    transition: all .5s;
-                    line-height: 1.5
-                }
-
-                .fcta-zalo-nen-nut:hover .fcta-zalo-text {
-                    transform: scaleX(1);
+                50% {
                     opacity: 1
                 }
 
-                div.fcta-zalo-mess {
-                    position: fixed;
-                    bottom: 38px;
-                    right: 58px;
-                    z-index: 99;
-                    background: #fff;
-                    padding: 7px 25px 7px 15px;
-                    color: #0068ff;
-                    border-radius: 50px 0 0 50px;
-                    font-weight: 700;
-                    font-size: 15px
+                to {
+                    opacity: 0;
+                    transform: scale(1)
+                }
+            }
+
+            @keyframes lucidgenzalo {
+                0% {
+                    transform: rotate(-25deg)
                 }
 
-                .fcta-zalo-mess span {
-                    color: #0068ff !important
+                50% {
+                    transform: rotate(25deg)
                 }
+            }
 
-                span#fcta-zalo-tracking {
-                    font-family: Roboto;
-                    line-height: 1.5
-                }
+            .jscroll-to-top {
+                bottom: 100px
+            }
 
-                .fcta-zalo-text {
-                    font-family: Roboto
-                }
-            </style>
+            .fcta-zalo-ben-trong-nut svg path {
+                fill: #fff
+            }
 
-            <script>
-                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                    document.getElementById("linkzalo").href = "https://zalo.me/0939110100";
-                }
-            </script>
+            .fcta-zalo-vi-tri-nut {
+                position: fixed;
+                bottom: 30px;
+                right: 20px;
+                z-index: 999
+            }
 
-            <!--Code nút Zalo từ LucidGen.com, anh em tracking Google Tag Manager bằng Click ID chứa fcta-zalo-tracking nhé-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5 class="text-light pt-2">VỀ CHÚNG TÔI</h5>
-                        <p><span class="text-danger">Địa chỉ:</span> 9/3E, Ấp Đông, Thới Tam Thôn, Hóc Môn, Tp. Hồ
-                            Chí Minh</p>
-                        {{-- <p><span class="text-danger">Mã số thuế:</span></p> --}}
-                        <p><span class="text-danger">Hotline:</span> <a class="d-inline" href="tel:0976150170">0976
-                                150
-                                170</a></p>
+            .fcta-zalo-nen-nut,
+            div.fcta-zalo-mess {
+                box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16)
+            }
 
-                    </div>
-                    {{-- <div class="col-md-4">
+            .fcta-zalo-nen-nut {
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                color: #fff;
+                background: #0068ff;
+                border-radius: 50%;
+                position: relative
+            }
+
+            .fcta-zalo-nen-nut::after,
+            .fcta-zalo-nen-nut::before {
+                content: "";
+                position: absolute;
+                border: 1px solid #0068ff;
+                background: #0068ff80;
+                z-index: -1;
+                left: -20px;
+                right: -20px;
+                top: -20px;
+                bottom: -20px;
+                border-radius: 50%;
+                animation: zoom 1.9s linear infinite
+            }
+
+            .fcta-zalo-nen-nut::after {
+                animation-delay: .4s
+            }
+
+            .fcta-zalo-ben-trong-nut,
+            .fcta-zalo-ben-trong-nut i {
+                transition: all 1s
+            }
+
+            .fcta-zalo-ben-trong-nut {
+                position: absolute;
+                text-align: center;
+                width: 60%;
+                height: 60%;
+                left: 10px;
+                bottom: 34px;
+                line-height: 70px;
+                font-size: 25px;
+                opacity: 1
+            }
+
+            .fcta-zalo-ben-trong-nut i {
+                animation: lucidgenzalo 1s linear infinite
+            }
+
+            .fcta-zalo-nen-nut:hover .fcta-zalo-ben-trong-nut,
+            .fcta-zalo-text {
+                opacity: 0
+            }
+
+            .fcta-zalo-nen-nut:hover i {
+                transform: scale(.5);
+                transition: all .5s ease-in
+            }
+
+            .fcta-zalo-text a {
+                text-decoration: none;
+                color: #fff
+            }
+
+            .fcta-zalo-text {
+                position: absolute;
+                top: 6px;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 700;
+                transform: scaleX(-1);
+                transition: all .5s;
+                line-height: 1.5
+            }
+
+            .fcta-zalo-nen-nut:hover .fcta-zalo-text {
+                transform: scaleX(1);
+                opacity: 1
+            }
+
+            div.fcta-zalo-mess {
+                position: fixed;
+                bottom: 38px;
+                right: 58px;
+                z-index: 99;
+                background: #fff;
+                padding: 7px 25px 7px 15px;
+                color: #0068ff;
+                border-radius: 50px 0 0 50px;
+                font-weight: 700;
+                font-size: 15px
+            }
+
+            .fcta-zalo-mess span {
+                color: #0068ff !important
+            }
+
+            span#fcta-zalo-tracking {
+                font-family: Roboto;
+                line-height: 1.5
+            }
+
+            .fcta-zalo-text {
+                font-family: Roboto
+            }
+        </style>
+
+        <script>
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                document.getElementById("linkzalo").href = "https://zalo.me/0939110100";
+            }
+        </script>
+
+        <!--Code nút Zalo từ LucidGen.com, anh em tracking Google Tag Manager bằng Click ID chứa fcta-zalo-tracking nhé-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-light pt-2">VỀ CHÚNG TÔI</h5>
+                    <p><span class="text-danger">Địa chỉ:</span> 9/3E, Ấp Đông, Thới Tam Thôn, Hóc Môn, Tp. Hồ
+                        Chí Minh</p>
+                    {{-- <p><span class="text-danger">Mã số thuế:</span></p> --}}
+                    <p><span class="text-danger">Hotline:</span> <a class="d-inline" href="tel:0976150170">0976
+                            150
+                            170</a></p>
+
+                </div>
+                {{-- <div class="col-md-4">
                         <h5 class="text-light pt-2">MẠNG XÃ HỘI</h5>
                         <p><span class="text-danger">Địa chỉ:</span> 9/3E, Ấp Đông, Thới Tam Thôn, Hóc Môn, Tp. Hồ
                             Chí Minh</p>
@@ -293,35 +283,35 @@
                         <p><span class="text-danger">Hotline:</span> <a href="tel:0976150170">0976 150 170</a></p>
 
                     </div> --}}
-                </div>
             </div>
+        </div>
 
-            <div class="hotline-phone-ring-wrap">
-                <div class="hotline-phone-ring">
-                    <div class="hotline-phone-ring-circle"></div>
-                    <div class="hotline-phone-ring-circle-fill"></div>
-                    <div class="hotline-phone-ring-img-circle">
-                        <a href="tel:0976150170" class="pps-btn-img">
-                            <i class="fa-solid fa-phone" style="font-size: 15px; color: white;"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hotline-bar">
-                    <a href="tel:0976150170">
-                        <span class="text-hotline">0976 150 170</span>
+        <div class="hotline-phone-ring-wrap">
+            <div class="hotline-phone-ring">
+                <div class="hotline-phone-ring-circle"></div>
+                <div class="hotline-phone-ring-circle-fill"></div>
+                <div class="hotline-phone-ring-img-circle">
+                    <a href="tel:0976150170" class="pps-btn-img">
+                        <i class="fa-solid fa-phone" style="font-size: 15px; color: white;"></i>
                     </a>
                 </div>
             </div>
+            <div class="hotline-bar">
+                <a href="tel:0976150170">
+                    <span class="text-hotline">0976 150 170</span>
+                </a>
+            </div>
         </div>
-        <div id="copyright" style="background-color: #70e91a;">
-            <div class="container-fluid bg-success p-2">
-                <div class="row">
-                    <div class="col-md-12 text-center text-white">
-                        copyright © 2022
-                    </div>
+    </div>
+    <div id="copyright" style="background-color: #70e91a;">
+        <div class="container-fluid bg-success p-2">
+            <div class="row">
+                <div class="col-md-12 text-center text-white">
+                    copyright © 2022
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 
