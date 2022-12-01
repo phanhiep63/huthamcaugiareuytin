@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container bg-white">
-        <div class="row pt-5 pb-5">
+        <div class="row pb-5">
             <div id="demo" class="carousel slide w-100" data-ride="carousel">
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
