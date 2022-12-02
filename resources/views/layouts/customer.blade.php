@@ -276,6 +276,11 @@
 
                 </div>
             </div>
+            <div class="hotline-bar">
+                <a href="tel:0976150170">
+                    <span class="text-hotline">0976 150 170</span>
+                </a>
+            </div>
         </div>
 
         <div class="hotline-phone-ring-wrap">
