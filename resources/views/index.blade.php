@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container bg-white">
-        <div class="row pt-5 pb-5">
+        <div class="row pb-5">
             <div id="demo" class="carousel slide w-100" data-ride="carousel">
                 <!-- Indicators -->
                 <ul class="carousel-indicators">
@@ -33,7 +33,7 @@
                     <ul>
                         <li>
                             <p class="mb-0">Khi có nhu cầu thông hút hầm cầu, quý khách vui lòng liên hệ
-                                hotline: <a style="font-size: 120%;" class="d-inline" href="tel:0976150170">0976
+                                hotline: <a style="font-size: 120%; font-weight: bold;" class="d-inline" href="tel:0976150170">0976
                                     150
                                     170</a>.
                             </p>
