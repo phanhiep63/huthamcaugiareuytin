@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="JGL6kT0Y46hL7X6rfN9MiLEDHeAni4lJSNp4z0AAE2M" />
+    <meta name="description"
+        content="Hút hầm cầu giá rẻ uy tín hay tên gọi khác là môi trường Tô Nguyễn là công ty môi trường. Chuyên phục vụ nhu cầu làm sạch bể phốt, hút hầm cầu, thông cống nghẹt và nhiều sản phẩm khác theo yêu cầu của quý khách. Mọi người có thể liên hệ số điện thoại 0976150170 hoặc số 0939110100 để được hỗ trợ. Địa chỉ: 9/3E, Ấp Đông, Thới Tam Thôn, Hóc Môn, Tp. Hồ Chí Minh">
     <link rel="stylesheet" href="{{ asset('bootstrap4/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('bootstrap4/css/bootstrap-grid.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
@@ -115,6 +118,7 @@
                 to {
                     opacity: 0;
                     transform: scale(1)
+<<<<<<< Updated upstream
                 }
             }
 
@@ -274,6 +278,167 @@
                             150
                             170</a></p>
 
+=======
+                }
+            }
+
+            @keyframes lucidgenzalo {
+                0% {
+                    transform: rotate(-25deg)
+                }
+
+                50% {
+                    transform: rotate(25deg)
+                }
+            }
+
+            .jscroll-to-top {
+                bottom: 100px
+            }
+
+            .fcta-zalo-ben-trong-nut svg path {
+                fill: #fff
+            }
+
+            .fcta-zalo-vi-tri-nut {
+                position: fixed;
+                bottom: 30px;
+                right: 20px;
+                z-index: 999
+            }
+
+            .fcta-zalo-nen-nut,
+            div.fcta-zalo-mess {
+                box-shadow: 0 1px 6px rgba(0, 0, 0, .06), 0 2px 32px rgba(0, 0, 0, .16)
+            }
+
+            .fcta-zalo-nen-nut {
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                color: #fff;
+                background: #0068ff;
+                border-radius: 50%;
+                position: relative
+            }
+
+            .fcta-zalo-nen-nut::after,
+            .fcta-zalo-nen-nut::before {
+                content: "";
+                position: absolute;
+                border: 1px solid #0068ff;
+                background: #0068ff80;
+                z-index: -1;
+                left: -20px;
+                right: -20px;
+                top: -20px;
+                bottom: -20px;
+                border-radius: 50%;
+                animation: zoom 1.9s linear infinite
+            }
+
+            .fcta-zalo-nen-nut::after {
+                animation-delay: .4s
+            }
+
+            .fcta-zalo-ben-trong-nut,
+            .fcta-zalo-ben-trong-nut i {
+                transition: all 1s
+            }
+
+            .fcta-zalo-ben-trong-nut {
+                position: absolute;
+                text-align: center;
+                width: 60%;
+                height: 60%;
+                left: 10px;
+                bottom: 34px;
+                line-height: 70px;
+                font-size: 25px;
+                opacity: 1
+            }
+
+            .fcta-zalo-ben-trong-nut i {
+                animation: lucidgenzalo 1s linear infinite
+            }
+
+            .fcta-zalo-nen-nut:hover .fcta-zalo-ben-trong-nut,
+            .fcta-zalo-text {
+                opacity: 0
+            }
+
+            .fcta-zalo-nen-nut:hover i {
+                transform: scale(.5);
+                transition: all .5s ease-in
+            }
+
+            .fcta-zalo-text a {
+                text-decoration: none;
+                color: #fff
+            }
+
+            .fcta-zalo-text {
+                position: absolute;
+                top: 6px;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 700;
+                transform: scaleX(-1);
+                transition: all .5s;
+                line-height: 1.5
+            }
+
+            .fcta-zalo-nen-nut:hover .fcta-zalo-text {
+                transform: scaleX(1);
+                opacity: 1
+            }
+
+            div.fcta-zalo-mess {
+                position: fixed;
+                bottom: 38px;
+                right: 58px;
+                z-index: 99;
+                background: #fff;
+                padding: 7px 25px 7px 15px;
+                color: #0068ff;
+                border-radius: 50px 0 0 50px;
+                font-weight: 700;
+                font-size: 15px
+            }
+
+            .fcta-zalo-mess span {
+                color: #0068ff !important
+            }
+
+            span#fcta-zalo-tracking {
+                font-family: Roboto;
+                line-height: 1.5
+            }
+
+            .fcta-zalo-text {
+                font-family: Roboto
+            }
+        </style>
+
+        <script>
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                document.getElementById("linkzalo").href = "https://zalo.me/0939110100";
+            }
+        </script>
+
+        <!--Code nút Zalo từ LucidGen.com, anh em tracking Google Tag Manager bằng Click ID chứa fcta-zalo-tracking nhé-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-light pt-2">VỀ CHÚNG TÔI</h5>
+                    <p><span class="text-danger">Địa chỉ:</span> 9/3E, Ấp Đông, Thới Tam Thôn, Hóc Môn, Tp. Hồ
+                        Chí Minh</p>
+                    {{-- <p><span class="text-danger">Mã số thuế:</span></p> --}}
+                    <p><span class="text-danger">Hotline:</span> <a class="d-inline" href="tel:0976150170">0976
+                            150
+                            170</a></p>
+
+>>>>>>> Stashed changes
                 </div>
                 {{-- <div class="col-md-4">
                         <h5 class="text-light pt-2">MẠNG XÃ HỘI</h5>
